@@ -61,6 +61,27 @@ namespace HomeWork14
                         //float result = sum.Invoke(a, b);
                         Console.WriteLine($"{a} + {b} = {result}");
                         break;
+                    case "-":
+                        Console.Write("a = ");
+                        // a = Convert.ToDouble(Console.ReadLine());
+                        // a = Convert.ToDecimal(Console.ReadLine());
+                        // a = Convert.ToFloat(Console.ReadLine());
+                        a = Convert.ToInt32(Console.ReadLine());
+                        Console.Write("b = ");
+                        b = Convert.ToInt32(Console.ReadLine());
+                        // b = Convert.ToDouble(Console.ReadLine());
+                        // b = Convert.ToDecimal(Console.ReadLine());
+                        // b = Convert.ToFloat(Console.ReadLine());
+                        Operation<int> dif = Calculator.Difference<int>;
+                        //Operation<double> dif = Calculator.Difference<double>;
+                        //Operation<float> dif = Calculator.Difference<float>;
+                        //Operation<decimal> dif = Calculator.Difference<decimal>;
+                        int result1 = dif.Invoke(a, b);
+                        //double result1 = dif.Invoke(a, b);
+                        //decimal result1 = dif.Invoke(a, b);
+                        //float result1 = dif.Invoke(a, b);
+                        Console.WriteLine($"{a} - {b} = {result1}");
+                        break;
                 }
             }
         }
