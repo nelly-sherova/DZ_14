@@ -103,6 +103,27 @@ namespace HomeWork14
                         //float result2 = mul.Invoke(a, b);
                         Console.WriteLine($"{a} * {b} = {result2}");
                         break;
+                    case "/":
+                        Console.Write("a = ");
+                        // a = Convert.ToDouble(Console.ReadLine());
+                        // a = Convert.ToDecimal(Console.ReadLine());
+                        // a = Convert.ToFloat(Console.ReadLine());
+                        a = Convert.ToInt32(Console.ReadLine());
+                        Console.Write("b = ");
+                        b = Convert.ToInt32(Console.ReadLine());
+                        // b = Convert.ToDouble(Console.ReadLine());
+                        // b = Convert.ToDecimal(Console.ReadLine());
+                        // b = Convert.ToFloat(Console.ReadLine());
+                        Operation<int> div = Calculator.Division<int>;
+                        //Operation<double> div = Calculator.Division<double>;
+                        //Operation<float> div = Calculator.Division<float>;
+                        //Operation<decimal> div = Calculator.Division<decimal>;
+                        int result3 = div.Invoke(a, b);
+                        //double result3 = div.Invoke(a, b);
+                        //decimal result3 = div.Invoke(a, b);
+                        //float result3 = div.Invoke(a, b);
+                        Console.WriteLine($"{a} * {b} = {result3}");
+                        break;
                 }
             }
         }
