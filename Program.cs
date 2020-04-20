@@ -82,6 +82,27 @@ namespace HomeWork14
                         //float result1 = dif.Invoke(a, b);
                         Console.WriteLine($"{a} - {b} = {result1}");
                         break;
+                    case "*":
+                        Console.Write("a = ");
+                        // a = Convert.ToDouble(Console.ReadLine());
+                        // a = Convert.ToDecimal(Console.ReadLine());
+                        // a = Convert.ToFloat(Console.ReadLine());
+                        a = Convert.ToInt32(Console.ReadLine());
+                        Console.Write("b = ");
+                        b = Convert.ToInt32(Console.ReadLine());
+                        // b = Convert.ToDouble(Console.ReadLine());
+                        // b = Convert.ToDecimal(Console.ReadLine());
+                        // b = Convert.ToFloat(Console.ReadLine());
+                        Operation<int> mul = Calculator.Multiplication<int>;
+                        //Operation<double> mul = Calculator.Multiplication<double>;
+                        //Operation<float> mul = Calculator.Multiplication<float>;
+                        //Operation<decimal> mul = Calculator.Multiplication<decimal>;
+                        int result2 = mul.Invoke(a, b);
+                        //double result2 = mul.Invoke(a, b);
+                        //decimal result2 = mul.Invoke(a, b);
+                        //float result2 = mul.Invoke(a, b);
+                        Console.WriteLine($"{a} * {b} = {result2}");
+                        break;
                 }
             }
         }
